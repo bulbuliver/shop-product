@@ -60,17 +60,19 @@ margin-right: -15px;
     width: 100%;
 }
 
-.menu li{
+.menu > li{
 float:left;
 width: 25%;
 border-left: 1px solid #2c71b8;
 
 }
 
-.menu li:last-child{
+
+
+.menu > li:last-child{
     border-right: 1px solid #2c71b8;
 }
-.menu a{
+.menu > li > a{
 display: block;
 height: 50px;
 text-align: center;
@@ -80,9 +82,77 @@ color: #2c71b8;
 font-size: 21px;
 }
 
-.menu a:hover {
+.menu > li > a:hover {
     background-color: #2c71b8;
     color: white;
+    
+}
+
+.submenu{
+    text-align: left;
+    position: absolute;
+    display: none;
+    
+  
+}
+
+.products:hover {
+    background-color: #2c71b8;
+    color: black;
+
+}
+
+.products:hover .product_link{
+
+color: white;
+
+}
+.submenu li{
+
+    background-color: #2c71b8;
+    width: 107.5%;
+    margin-left: -1px;
+    
+    
+}
+.submenu li:first-child{
+    padding-top: 20px;
+}
+
+
+.submenu li:last-child{
+    padding-bottom: 20px;
+}
+
+
+
+.submenu a{
+    line-height: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    margin-left: 29px;
+    padding-top: 20px;
+    /* font-weight: 300; */
+
+
+
+}
+
+.submenu  li:hover{
+background-color: white;
+}
+
+.submenu  li:hover a{
+ color: #2c71b8;
+    }
+
+
+.products:hover .submenu{
+
+display: block;
+
+
 }
 
 .search_border{
@@ -118,6 +188,7 @@ font-size: 21px;
     background-image: url(images/search.png);
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 
@@ -131,6 +202,7 @@ font-size: 21px;
     background-image: url(images/cart.png);
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .cart_4{
@@ -149,3 +221,200 @@ font-size: 21px;
     background-position: center;
     background-repeat: no-repeat;
 }
+.logo{
+    margin-top: 8px;
+    /* margin-left: 50px; */
+}
+
+
+
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+.slider{
+    height: 400px;
+    background-color: black;
+}
+
+
+.blank{
+    background-color: transparent;    
+
+}
+
+.blank_height{
+    height: 65px;
+
+}
+
+.filter{
+    background-color: black;
+}
+
+.product-box{
+
+    height: 650px;
+    
+}
+
+.device-type{
+
+    margin-top: -130px;
+    height: 840px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.product-info{
+
+background-color: rgba(43, 113, 183, 0.75);
+border: 1px solid rgba(255, 255, 255, 0.75);
+padding: 15px 15px 30px 15px;
+}
+
+.product-image{
+ position: relative;
+ height: 180px;
+ text-align: center;
+ background-color: rgba(255, 255, 255, 0.75);
+ 
+ 
+}
+
+.product-image img{
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+
+}
+
+.product-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.product-description{
+    color: white;
+    font-size: 21px;
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+
+.bold-info{
+    font-weight: bold;
+    color: white;
+}
+
+.price{
+    font-size: 48px;
+    color: white;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.cents{
+    position: relative;
+    color: white;
+    font-size: 24px;
+    bottom: 16px;
+    /* margin-top: 25px; */
+}
+.more-details{
+    height: 50px;
+    width: 210px;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    background-color: #2c71b8;
+    margin: 5px;
+    border: 1px solid white;
+
+
+}
+
+.buttons{
+    text-align: center;
+}
+
+.add-to-cart{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.image-open{
+    margin-top: -70px;
+    margin-left: 110px;
+    border: 1px;
+    border-color: #2c71b8;
+}
+.image-like{
+    margin-top: -30px;
+    margin-left: 110px;
+}
+
+.DeviceType_checkbox{
+ color: white;
+ font-weight: 200;
+ 
+}
+
+.Show_more_options{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 18px;
+    transform: translate(10%, 00%);
+    height: 50px;
+}
+
+.Device_type{
+    color: white;
+    font-size: 25px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.Device_type_box{
+margin-top: 50px;
+
+}
+.color_ram{
+    color: white;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.device_type_text{
+font-size: 20px;
+margin-left: 10px;
+margin-top: 20px;
+margin-bottom: 20px;
+
+
+
+}
+
+/* label:before{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+}
+
+[input = "checkbox"]{
+display: none;
+
+
+} */
