@@ -73,7 +73,19 @@ closeBTN.addEventListener("click", function(){
 
 let pageHeight = document.body.scrollHeight;
 let pageHalf = pageHeight / 4;
-window.addEventListener("scroll", function(){
-   if (window.pageYOffset > pageHalf)
-   {modalWindow.classList.add("show");}    
-})
+
+
+function scrollHalfPage(){
+    if (window.scrollY > pageHalf)
+    {modalWindow.classList.add("show");
+    window.removeEventListener("scroll", scrollHalfPage);
+}
+
+};
+
+window.addEventListener("scroll", scrollHalfPage);
+
+
+
+
+  AOS.init();
